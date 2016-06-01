@@ -23,6 +23,7 @@
         "ami_name": "{{user `ami_prefix`}} {{timestamp}}",
         "ami_virtualization_type": "{{user `ami_virtualization_type`}}",
         "ssh_timeout": "10m",
+        "ssh_pty": "true",
         "launch_block_device_mappings": [{
             "device_name": "{{user `root_device_name`}}",
             "volume_size": 30,
